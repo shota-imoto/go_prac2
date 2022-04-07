@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<title>Go Web Programming</title>
+	</head>
+	<body>
+		<div>ここは、ここは、include1.html(インクルードの前)</div>
+		<div>include1.html内のドットの値 - [{{ . }}]</div>
+		<hr>
+		{{ template "include2.html" . }}
+		<hr>
+		<div>ここはinclude1.html(インクルードの後)</div>
+	</body>
+</html>
